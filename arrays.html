@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAYS</h1>
+    <script>
+        //accessing elements in an array
+        let arr = [1,2,3,4,5,"john",false,[6,7,[8,20,["jane","joe","true"]]],11]
+
+        console.log(arr[7][2][2][2])
+
+        //updating values in an array
+        let ar = [1,2,"Dohn Doe"]
+        arr[2]="jane Doe"
+        console.log(ar)
+
+        //determine the length/size of an array
+        let size = arr.length
+        console.log("Array size",size)
+
+        //add elements to an array
+        // **add at the end of an array- use push
+        arr.push(12,13,14,false,"Glory")
+        console.log("pushed array",arr)
+        //add elements at the start of an array-use unshift
+        arr.unshift("Javascript","Python")
+        console.log("unshifted array",arr)
+        //remove elements from the end of an array
+        arr.pop()
+        console.log("popped array",arr)
+        //remove elements at the start of an array
+        arr.shift()
+        console.log("shifted array",arr)
+        //.includes()checks if a values exits in an array
+        
+        console.log(arr.includes("Doe"))
+        
+        //.splice remove
+        //changes the order of elements in an array
+        arr.reverse()
+        console.log(arr)
+        //lastindexof -last occurence of an element in an array
+        console.log(arr.lastIndexOf(2))
+
+
+        
+        //task slide 53,69,70
+        //use splice to  add and replace elements
+        //use sort -give me your observation on sortint numbers;1000,200,300
+
+    </script>
+    
+</body>
+</html>
