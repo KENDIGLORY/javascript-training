@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        JS OBJECTS
+    </div>
+    <script>
+        let person = {
+            name:"Mary",
+            age:21,
+            address:"Kimathi St, Nairobi",
+            isMarried:false,
+            job_title:"Software Developer",
+            "phone number":"0712345678"
+        }
+        // let age = person.age
+        // console.log(age)
+        // let address = person["address"]
+        // console.log(address)
+
+        let keys = Object.keys(person)
+        let values = Object.values(person)
+        let entries = Object.entries(person)
+        console.log(keys)
+        console.log(values)
+         console.log(entries)
+
+         let user = {
+        name: "Alice",
+        hobbies: ["cycling", "painting"],
+        posts: [
+          {
+            id: 1,
+            title: "My first post",
+            comments: [
+              { id: 101, text: "Great post!" },
+              { id: 102, text: "Thanks for sharing." },
+            ],
+          },
+          {
+            id: 2,
+            title: "Another day",
+            comments: [],
+          },
+        ],
+      };
+
+      console.log(user.posts[0].comments[0].text)
+
+      //task slide 75,76
+
+    </script>
+    
+</body>
+</html>

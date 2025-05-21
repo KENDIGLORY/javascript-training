@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>arrays task</p>
+    <script>
+        // slide 53
+// 1.Clean up the following variable to give the clean version in lower case. Using inbuilt methods in the string class
+//   f_name = “  JOHn  .“ to “john”
+let f_name = "  JOHn  ."
+let fname = f_name.trim().replace(".","").toLowerCase()
+console.log(fname)
+
+// 2.Slice the below string to get you the resulting sentence:
+//   a.sentence_one = “The Dog Breed is German Shepherd” only display “Breed is German”
+let sentence_one = "The Dog Breed is German Shepherd"
+let s1 =sentence_one.slice(8,23)
+console.log(s1)
+
+//   b.sentence_two = “Defeats for the Clinton forces, this was her moment of triumph” only display “Clinton forces”
+ sentence_two = "Defeats for the Clinton forces, this was her moment of triumph"
+ let s2 = sentence_two.slice(16,30)
+ console.log(s2)
+// 3.Split the below sentence using a semicolon i.e ; And display length of the result. 
+//  “The lazy dog; ran so fast; it hit the wall.” 
+sentence_three ="The lazy dog; ran so fast; it hit the wall."
+s3 = sentence_three.split(';')
+console.log(s3)
+
+
+    </script>
+</body>
+</html>
